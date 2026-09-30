@@ -306,6 +306,25 @@
       <li>Operating system version</li>
       <li>App version</li>
     </ul>
+
+    <h3>1.7 Voice Typing (Android)</h3>
+    <p>
+      Hearless offers optional voice typing. When you turn on <strong>"HearLess Voice Typing"</strong>
+      in your phone's Accessibility settings, Hearless uses Android's Accessibility Service only to
+      detect when you are typing in a text field, show the HearLess microphone button, and insert
+      the text you dictated into that field. It does not read, store or share any other content on
+      your screen, and it is never used for advertising.
+    </p>
+    <p>
+      Audio is recorded only after you tap the HearLess microphone button, and recording stops when
+      you tap &#10003; or &#10005;. The recording is sent over an encrypted connection to our backend
+      and our speech provider (OpenAI) to convert it to text, then deleted. It is not used to train
+      models or for ads.
+    </p>
+    <p>
+      You can hide the microphone button at any time in Hearless &rarr; Profile &rarr; Voice Typing,
+      or turn the service off in your phone's Accessibility settings.
+    </p>
   </section>
 
   <!-- Section 2 -->
@@ -328,7 +347,7 @@
 
     <p>
       When you submit audio for transcription, your audio file is sent securely to our
-      private backend server hosted on <strong>Render (render.com)</strong>. Our backend
+      private backend running on <strong>Supabase</strong> (Edge Functions). Our backend
       acts as a secure intermediary between the app and the transcription API.
     </p>
 
@@ -387,8 +406,8 @@
       <div class="third-party-item">
         <div class="dot"></div>
         <div>
-          <div class="name">Render (render.com)</div>
-          <div class="desc">Our backend hosting provider. Audio is temporarily processed on Render's infrastructure before being forwarded to OpenAI. Privacy policy: render.com/privacy</div>
+          <div class="name">Supabase</div>
+          <div class="desc">Our backend provider (Edge Functions). Audio is temporarily processed on Supabase's infrastructure before being forwarded to OpenAI. Privacy policy: supabase.com/privacy</div>
         </div>
       </div>
       <div class="third-party-item">
@@ -476,7 +495,7 @@
     <h2>International Users</h2>
     <p>
       Your data may be processed in different countries, including where our backend
-      infrastructure (Render) and third-party services (OpenAI, Firebase) operate.
+      infrastructure (Supabase) and third-party services (OpenAI, Firebase) operate.
       By using the app, you consent to such processing.
     </p>
   </section>
@@ -507,7 +526,7 @@
 
 <footer>
   <p>© 2026 Hearless – Audio Transcriber. All rights reserved.</p>
-  <p style="margin-top: 8px;">Last updated: May 2026</p>
+  <p style="margin-top: 8px;">Last updated: September 2026</p>
 </footer>
 
 </body>
