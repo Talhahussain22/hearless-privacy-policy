@@ -238,7 +238,7 @@
 <header>
   <div class="app-tag">Legal Document</div>
   <h1>Privacy Policy</h1>
-  <p>Hearless – Audio Transcriber &nbsp;·&nbsp; Effective Date: April 2026</p>
+  <p>Hearless – Audio Transcriber &nbsp;·&nbsp; Effective Date: October 2026</p>
 </header>
 
 <div class="container">
@@ -324,6 +324,30 @@
     <p>
       You can hide the microphone button at any time in Hearless &rarr; Profile &rarr; Voice Typing,
       or turn the service off in your phone's Accessibility settings.
+    </p>
+
+    <h3>1.8 Voice Typing (iPhone keyboard)</h3>
+    <p>
+      On iPhone, Hearless offers voice typing through the optional <strong>HearLess keyboard</strong>.
+      iOS does not let keyboards use the microphone, so the Hearless app records your voice and the
+      keyboard only starts and stops it. For this, the keyboard needs <strong>"Allow Full Access"</strong>:
+      it is used only to exchange a few values with the Hearless app on your device (whether a
+      dictation is in progress, the microphone level for the waveform, the resulting text to insert,
+      and your script setting). The keyboard does not store, collect or send anything you type; your
+      keystrokes stay on your phone.
+    </p>
+    <p>
+      Audio is recorded only after you tap the HearLess microphone on the keyboard, and recording stops
+      when you tap &#10003; or &#10005;. To make the next dictation instant, the Hearless app keeps a
+      voice session ready for up to 5 minutes without use; while it is ready, iOS shows its orange
+      microphone indicator, and no audio is saved until you tap the microphone again. Recordings are
+      sent over an encrypted connection to our backend and our speech provider (OpenAI) to convert
+      them to text, then deleted. They are not used to train models or for ads.
+    </p>
+    <p>
+      You can turn off Full Access or remove the HearLess keyboard at any time in
+      Settings &rarr; General &rarr; Keyboard &rarr; Keyboards, and hide the keyboard's microphone in
+      Hearless &rarr; Profile &rarr; Voice Typing.
     </p>
   </section>
 
@@ -420,8 +444,29 @@
       <div class="third-party-item">
         <div class="dot"></div>
         <div>
-          <div class="name">Google Play Billing</div>
-          <div class="desc">Used for secure in-app payment processing.</div>
+          <div class="name">Google Play Billing &amp; Apple App Store</div>
+          <div class="desc">Used for secure in-app payment processing on Android and iPhone. We never receive your card details.</div>
+        </div>
+      </div>
+      <div class="third-party-item">
+        <div class="dot"></div>
+        <div>
+          <div class="name">Google Sign-In &amp; Sign in with Apple</div>
+          <div class="desc">Optional ways to sign in. We receive your name (if you share it), email address and an account identifier.</div>
+        </div>
+      </div>
+      <div class="third-party-item">
+        <div class="dot"></div>
+        <div>
+          <div class="name">PostHog</div>
+          <div class="desc">Product analytics: which screens and features are used, with no transcript or message content. Session recordings only if you agree; screens that show your transcripts, the words you dictate or your account details are hidden from them. Privacy policy: posthog.com/privacy</div>
+        </div>
+      </div>
+      <div class="third-party-item">
+        <div class="dot"></div>
+        <div>
+          <div class="name">Firebase Crashlytics</div>
+          <div class="desc">Crash reports (device model, OS version, app state at the crash) so we can fix bugs. Privacy policy: firebase.google.com</div>
         </div>
       </div>
     </div>
